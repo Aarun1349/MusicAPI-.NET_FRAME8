@@ -10,7 +10,7 @@ namespace MusicAPI.Models
         public string Name { get; set; }
         public string Gender { get; set; }
         [NotMapped]
-        public FormFile Image { get; set; }
+        public IFormFile Image { get; set; }
         public string ImageUrl { get; set; }
         public ICollection<Album> Albums { get; set; }
         public ICollection<Songs> Songs { get; set; }

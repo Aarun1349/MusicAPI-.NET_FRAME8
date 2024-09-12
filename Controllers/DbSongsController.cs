@@ -125,9 +125,9 @@ namespace MusicAPI.Controllers
                 }
                 else
                 {
-                    updatedSong.title = song.title;
-                    updatedSong.artist = song.artist;
-                    updatedSong.language = song.language;
+                    updatedSong.Title = song.Title;
+                    updatedSong.ArtistId = song.ArtistId;
+                    updatedSong.Language = song.Language;
 
                     //_dbContext.Songs.Update(updatedSong);
                    await _dbContext.SaveChangesAsync();

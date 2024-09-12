@@ -6,6 +6,7 @@ using MusicAPI.Helpers;
 using MusicAPI.Models;
 using System.Threading.Tasks;
 using System;
+using System.Linq;
 
 namespace MusicAPI.Controllers
 {
@@ -66,7 +67,7 @@ namespace MusicAPI.Controllers
                                  select new
                                  {
                                      Id = song.Id,
-                                     Nama = song.Name,
+                                     Title = song.Title,
                                      ImageUrl = song.ImageUrl,
                                      Duration = song.Duration,
                                      AudioUrl = song.AudioUrl,
@@ -82,7 +83,7 @@ namespace MusicAPI.Controllers
                                select new
                                {
                                    Id = song.Id,
-                                   Nama = song.Name,
+                                   Title = song.Title,
                                    ImageUrl = song.ImageUrl,
                                    Duration = song.Duration,
                                    AudioUrl = song.AudioUrl,
@@ -100,7 +101,7 @@ namespace MusicAPI.Controllers
                                select new
                                {
                                    Id = song.Id,
-                                   Nama = song.Name,
+                                   Title = song.Title,
                                    ImageUrl = song.ImageUrl,
                                    Duration = song.Duration,
                                    AudioUrl = song.AudioUrl,
@@ -117,7 +118,7 @@ namespace MusicAPI.Controllers
                                select new
                                {
                                    Id = song.Id,
-                                   Nama = song.Name,
+                                   Title = song.Title,
                                    ImageUrl = song.ImageUrl,
                                    Duration = song.Duration,
                                    AudioUrl = song.AudioUrl,

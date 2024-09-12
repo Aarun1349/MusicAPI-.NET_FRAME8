@@ -12,7 +12,7 @@ namespace MusicAPI.Models
         public ICollection<Songs> Songs { get; set; }
         
         [NotMapped]
-        public FormFile Image { get; set; }
+        public IFormFile Image { get; set; }
         public string ImageUrl { get; set; }
     }
 }

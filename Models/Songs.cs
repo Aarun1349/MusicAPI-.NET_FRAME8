@@ -14,7 +14,7 @@ namespace MusicAPI.Models
         public DateTime UploadDate { get; set; }
         public bool IsFeatured { get; set; }
         [NotMapped]
-        public FormFile Image { get; set; }
+        public IFormFile Image { get; set; }
         [NotMapped]
         public FormFile AudioFile { get; set; }
         public string ImageUrl { get; set; }

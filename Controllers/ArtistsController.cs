@@ -26,6 +26,11 @@ namespace MusicAPI.Controllers
         {
             try
             {
+
+                if (artist.Image == null || artist.Image.Length == 0)
+                {
+                    return BadRequest("No file uploaded.");
+                }
                 var imageUrl = await CloudinaryService.CloudinaryImageUpload(artist.Image);
                 artist.ImageUrl = imageUrl;
                 await _dbContext.AddAsync(artist);
